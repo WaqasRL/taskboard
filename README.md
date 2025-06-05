@@ -53,6 +53,16 @@ yarn test
 
 ---
 
+## 🗃️ State Persistence
+
+This app uses [**pinia-plugin-persistedstate**](https://github.com/prazdevs/pinia-plugin-persistedstate) to persist task and filter data across browser sessions.
+
+* The plugin is registered in `plugins/pinia-persist.client.ts`.
+* Only relevant parts of the store (e.g., `tasks`, `filter`) are persisted.
+* This ensures the task list and applied filters are retained even after a page reload.
+
+---
+
 ## 🤔 Future Enhancements
 
 * 🚀 **Backend Integration**: Connect to an API for task persistence
